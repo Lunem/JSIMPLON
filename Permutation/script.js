@@ -5,4 +5,4 @@ var permutation = function(a,b){
   b = c;
 }
 
-alert(permutation(3,6));
+permutation(3,6);
