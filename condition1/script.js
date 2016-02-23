@@ -7,3 +7,4 @@ var nombreMaximum = function(a,b) {
     return(b);
   }
 }
+nombreMaximum(12,42);
