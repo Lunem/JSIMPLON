@@ -19,7 +19,7 @@ var quelMois = function(mois){
   }
 
   else {
-    return "Euh, vous êtes sûr d'avoir rentré le nombre d'un mois ?";
+    return "Euh, vous êtes sûr d\'avoir rentré le nombre d'un mois ?";
   }
 }
 

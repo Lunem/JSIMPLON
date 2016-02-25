@@ -1,5 +1,5 @@
 var bissextile = function(annee){
-  if((annee%4 === 0 && annee%100 != 0) || annee%400 === 0){
+  if(annee % 4 === 0 && annee % 100 != 0 || annee % 400 === 0){
     return("l\'annee est bissextile");
   }
   else {
@@ -7,4 +7,4 @@ var bissextile = function(annee){
   }
 }
 
-bissextile(2008);
+console.log(bissextile(2008));
