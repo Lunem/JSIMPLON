@@ -60,20 +60,34 @@
 // }
 // premiersentiersimpairs(nombre);
 
-//- les entiers strictement positifs impairs qui sont inférieurs ou égaux à n.
-
-var nombre = (prompt("Entrez un nombre"));
-var premiersentiersimpairsinf = function(nombre){
-  var compteur = 0;
-  if(compteur % 2 == 0){
-    compteur++;
-  }
-  else {
-    while(compteur<= nombre){
-    console.log(compteur);
-    compteur++;
-  }
-  }
-
-}
-premiersentiersimpairsinf(nombre);
+// <<<<<<< HEAD
+// //- les entiers strictement positifs impairs qui sont inférieurs ou égaux à n.
+//
+// var nombre = (prompt("Entrez un nombre"));
+// var premiersentiersimpairsinf = function(nombre){
+//   var compteur = 0;
+//   if(compteur % 2 == 0){
+//     compteur++;
+//   }
+//   else {
+//     while(compteur<= nombre){
+//     console.log(compteur);
+//     compteur++;
+//   }
+//   }
+//
+// }
+// premiersentiersimpairsinf(nombre);
+// =======
+// // var nombre = (prompt("Entrez un nombre"));
+// // var premiersentiersimpairsinf = function(nombre){
+// //   var compteur = 1;
+// //   if(compteur < nombre && !isNaN(nombre)){
+// //   while(compteur <= nombre){
+// //     console.log(compteur);
+// //     compteur+=2;
+// //   }
+// // }
+// // }
+// // premiersentiersimpairsinf(nombre);
+>>>>>>> c241bf5a5c3d988889aed7bf4c944257c3b4283b
