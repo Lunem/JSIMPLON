@@ -24,15 +24,16 @@
 
 var nombre = (prompt("Entrez un nombre"));
  premierpositif = function(nombre){
-   var compteur = 1;
-   var compteur2 = 0;
+   var compteur = 2;
+   var compteur2 = nombre;
+   var resultat = 0;
    if (nombre > 0 && !isNaN(nombre)){
      while(compteur < nombre){
+       compteur = (compteur2 - 1) * compteur;
        compteur++;
-       compteur2 = compteur;
-       compteur2 = compteur2 * compteur;
      }
-     console.log(compteur2);
+     resultat = compteur2;
+     console.log(resultat);
    }
 }
 premierpositif(nombre);
