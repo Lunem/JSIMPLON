@@ -1,11 +1,8 @@
 //Exercice 1 - Afficher le n premiers chiffres
 //Écrire un algorithme qui lit un nombre entier n et affiche :
-//- les n premiers entiers strictement positifs ;
-//- les n premiers entiers strictement positifs en ordre décroissant ;
-//- les n premiers carrés parfaits ;
-//- les n premiers entiers strictement positifs impairs ;
-//- les entiers strictement positifs impairs qui sont inférieurs ou égaux à n.
 
+
+//- les n premiers entiers strictement positifs ;
 
 // var nombre = (prompt("Entrez un nombre"));
 //  premierpositif = function(nombre){
@@ -18,7 +15,9 @@
 //    }
 // }
 // premierpositif(nombre);
-//
+
+//- les n premiers entiers strictement positifs en ordre décroissant ;
+
 // var nombre = (prompt("Entrez un nombre"));
 //  premierpositifReverse = function(nombre){
 //    var compteur = nombre;
@@ -30,6 +29,8 @@
 //    }
 // }
 // premierpositifReverse(nombre);
+
+//- les n premiers carrés parfaits ;
 
 // var nombre = (prompt("Entrez un nombre"));
 // var premiercarresparfait = function(nombre){
@@ -59,14 +60,20 @@
 // }
 // premiersentiersimpairs(nombre);
 
+//- les entiers strictement positifs impairs qui sont inférieurs ou égaux à n.
+
 var nombre = (prompt("Entrez un nombre"));
 var premiersentiersimpairsinf = function(nombre){
-  var compteur = 1;
-  if(compteur < nombre && !isNaN(nombre)){
-  while(compteur <= nombre){
-    console.log(compteur);
-    compteur+=2;
+  var compteur = 0;
+  if(compteur % 2 == 0){
+    compteur++;
   }
-}
+  else {
+    while(compteur<= nombre){
+    console.log(compteur);
+    compteur++;
+  }
+  }
+
 }
 premiersentiersimpairsinf(nombre);
