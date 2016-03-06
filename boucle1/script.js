@@ -59,14 +59,14 @@
 // }
 // premiersentiersimpairs(nombre);
 
-var nombre = (prompt("Entrez un nombre"));
-var premiersentiersimpairsinf = function(nombre){
-  var compteur = 1;
-  if(compteur < nombre && !isNaN(nombre)){
-  while(compteur <= nombre){
-    console.log(compteur);
-    compteur+=2;
-  }
-}
-}
-premiersentiersimpairsinf(nombre);
+// var nombre = (prompt("Entrez un nombre"));
+// var premiersentiersimpairsinf = function(nombre){
+//   var compteur = 1;
+//   if(compteur < nombre && !isNaN(nombre)){
+//   while(compteur <= nombre){
+//     console.log(compteur);
+//     compteur+=2;
+//   }
+// }
+// }
+// premiersentiersimpairsinf(nombre);
