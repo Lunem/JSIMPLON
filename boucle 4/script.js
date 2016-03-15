@@ -17,20 +17,20 @@
 //
 // pascroissant(16);
 
-//
-// var laboiteuse = function(nombre){
-//   var resultat = 1;
-//   var compteur = 1;
-//   while(compteur <= nombre/2){
-//     compteur++;
-//     console.log(resultat);
-//     resultat ++;
-//     console.log(resultat);
-//     resultat = resultat + 2;
-//   }
-// }
-//
-// laboiteuse(15);
+
+var laboiteuse = function(nombre){
+  var resultat = 1;
+  var compteur = 1;
+  while(compteur<= nombre/2){
+    compteur++;
+    console.log(resultat);
+    resultat ++;
+    console.log(resultat);
+    resultat = resultat + 2;
+  }
+}
+
+laboiteuse(15);
 
 var fibonacci = function(nombre){
   var nb1 = 1;
