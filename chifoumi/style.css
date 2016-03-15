@@ -1,0 +1,23 @@
+body {
+  background-color: black;
+  text-align: left;
+  color: white;
+  font-family: sans-serif;
+}
+
+
+.h1 {
+  font-size: 24px;
+}
+
+.divider {
+  border-top: 3px solid white;
+  margin: 30px 30px 30px 0;
+}
+
+
+#bouton-valider {
+  background-color: grey;
+  color: white;
+  border-radius: 5px;
+}
