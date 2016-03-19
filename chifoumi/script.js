@@ -7,24 +7,56 @@
 // Étape pour les plus aguerris : ajouter un compteur de victoires et de défaites et afficher le pourcentage de victoire contre l'ordinateur.
 //
 // Vous aurez besoin de la fonction Math.random().
+function game(){
+var chifoumix = document.getElementById("chifoumi").selected.Index;
+var choixJoueur = document.getElementById("chifoumi").options;
+}
+//L'ordinateur choisit un nombre random entre 1 et 3
 
-var button = document.getElementById("bouton-valider");
-var formulaire = document.getElementById("entree-utilisateur");
-
-
-var aleatoire = Math.floor(Math.random() * 4);
+var aleatoire = Math.floor(Math.random() * 2);
 console.log(aleatoire);
 
-function choisir(){
+//ce nombre est affecté à pierre, feuille, ciseaux.
 
-break;
-case "feuille";
-break;
-case "ciseaux";
-break;
-default:document.choix.texter.value="Et sinon ?";break;
+if(aleatoire == 0){
+  aleatoire = "pierre";
 }
+
+else if(aleatoire == 1){
+  aleatoire = "feuille";
 }
+
+else {
+  aleatoire = "ciseaux";
+}
+
+//l'utilisateur sélectionne pierre, feuille ou ciseaux.
+//Le choix est comparéà celui de l'ordinateur.
+
+//il faut traiter les cas suivants:
+//ciseaux<pierre<feuille
+//pierre<feuille<ciseaux
+//feuille<ciseaux<pierre
+//match nul
+
+
+console.log(userEnter);
+  if(userEnter == aleatoire){
+    document.write("Vous avez gagnÃ© !");
+  }
+
+  else if(userEnter < aleatoire) {
+    alert("Le chiffre est plus grand");
+  }
+
+  else {
+    alert("Le chiffre est plus petit");
+  }
+}
+
+
+
+
 
 
 // var button = document.getElementById("bouton-valider");
