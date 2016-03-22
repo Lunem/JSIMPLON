@@ -86,15 +86,16 @@ function autoclick(){
 // Désormais, on doit pouvoir acheter un bonus qui augmente le score de 200% à chaque clic pendant 30 secondes. C'est à dire que si à chaque clic, le score augmente de 3, pendant les 30 secondes de bonus le score augmentera de 6 a chaque clic, au bout des 30 secondes le score augmentera à nouveau de 3 par clic.
 // Vous créerez le bouton "BONUS" avec l'id bonus, et le bonus coutera 5000. Lorsque le bonus est acheté, le nombre de seconde s'affichera dans le bouton avec le décompte et le bouton devra etre désactivé pendant le temps du bonus. Quand le bonus est fini, le bouton est réactivé et retrouve son texte d'origine.
 
-function groBonus(){
   var decompte = 30;
+
+function groBonus(){
   var i;
   if(score >= 5000){
       if(decompte > 0) {
         document.getElementById("bonus").innerHTML = "Le bonus se termine dans " + decompte + " secondes";
         decompte--;
         document.getElementById("autoclick").disabled = true;
-        i = setTimeout("groBonus()"),1000;
+        i = setTimeout(groBonus,1000);
         }
       else {
         clearTimeout(i);
